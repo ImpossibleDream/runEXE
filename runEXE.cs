@@ -20,6 +20,7 @@ namespace runEXE
                     myProcess.StartInfo.UseShellExecute = true;
                     myProcess.StartInfo.FileName = @"c:\Users\admin\source\repos\DirectoryStatistic\DirectoryStatistic\bin\Debug\DirectoryStatistic.exe";
                     myProcess.Start();
+                    Console.WriteLine("This project is also able to print anything (including normal output and exception) that the EXE will print.");
                     Console.ReadLine();
                 }
             }
