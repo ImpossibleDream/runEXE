@@ -18,8 +18,10 @@ namespace runEXE
                 using (Process myProcess = new Process ())
                 {
                     myProcess.StartInfo.UseShellExecute = true;
-                    myProcess.StartInfo.FileName = @"c:\Users\admin\source\repos\DirectoryStatistic\DirectoryStatistic\bin\Debug\DirectoryStatistic.exe";
+                    Console.Write("The EXE path: ");
+                    myProcess.StartInfo.FileName = Console .ReadLine ();
                     myProcess.Start();
+                    Console.WriteLine("This project is also able to print anything (including normal output and exception) that the EXE will print.");
                     Console.ReadLine();
                 }
             }
